@@ -1,0 +1,52 @@
+    .btn {
+        min-width: 160px;
+        height: 40px;
+        padding: 12px 20px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        border: 1px solid $btn-border-color;
+        border-radius: 25px;
+        background-color: transparent;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+
+        &__header {
+            color: $primer-text-color;
+            @media (max-width: 767px) {
+               display: none;
+            }
+
+            &:hover {
+                color: $primer-text-color;
+                background-color: $btn-hover-color;
+            }
+        }
+
+        &__benefits {
+            margin-top: 20px;
+            color: $primer-title-color;
+            &:hover {
+                color: $primer-text-color;
+                background-color: $btn-hover-color;
+            }
+        }
+
+        &__servic {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            color: $primer-text-color;
+
+
+            
+            &:hover {
+                color: $primer-text-color;
+                background-color: $btn-hover-color;
+            }
+        }
+
+
+        
+    }
