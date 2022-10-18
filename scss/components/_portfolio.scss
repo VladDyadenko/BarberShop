@@ -1,0 +1,30 @@
+.portfolio__title {
+    width: 100%;
+    margin: 0 0 71px 0;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: $primer-title-color;
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: currentColor;
+        margin-right: 20px;
+    }
+}
+.portfolio-list__picture {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    &--position {
+        margin-bottom: 0;
+    }
+}
+.portfolio-list__img {
+    display: block;
+    width: 100%;
+}

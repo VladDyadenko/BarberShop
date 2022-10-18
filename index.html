@@ -17,7 +17,7 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container container__header">
       <a class="logo" href="index.html">
         <svg class="logo__svg" width="69" height="56">
           <use class="logo__icon" href="./img/icons.svg#icon-Logo"></use>
@@ -38,7 +38,7 @@
   <main>
     <!-- Головна -->
     <section class="section section__general">
-      <div class="container  container__general">
+      <div class="container">
         <div class="container__general">
           <p class="title__descr">A hair salon for men in Kyiv</p>
           <h1 class="title">BarberShop</h1>
@@ -161,161 +161,209 @@
 
     </section>
     <!-- Команда -->
-    <section class="section">
-      <p class="team__descr">For true enjoyers of the atmosphere</p>
-      <h3 class="team__title">Our barbers</h3>
-      <ul class="team__list">
-        <li class="team__item">
-          <img class="team__img" src="" alt="foto master" width="370">
-          <p class="team__name">John Smith</p>
-          <p class="team__prof">Extreme Barber</p>
-          <div class="container-social">
-            <ul class="list-social">
-              <li class="list-social__item">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-social__item">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-Vectorbeard"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-social__item">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-social__item--position">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="team__item">
-          <img class="team__img" src="" alt="foto master" width="370">
-          <p class="team__name">Michele Doe</p>
-          <p class="team__prof">Extreme Barber</p>
-          <div class="container-social">
-            <ul class="list-social">
-              <li class="list-social__item">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-social__item">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-Vectorbeard"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-social__item">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-social__item--position">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="team__item">
-          <img class="team__img" src="" alt="foto master" width="370">
-          <p class="team__name">Alan Black</p>
-          <p class="team__prof">Extreme Barber</p>
-          <div class="container-social">
-            <ul class="list-social">
-              <li class="list-social__item">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-social__item">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-Vectorbeard"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-social__item">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-social__item--position">
-                <a class="list-social__link" href="">
-                  <svg class="list-social__svg" width="44" height="44">
-                    <use class="list-social__icon" href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+    <section class="section section__team">
+      <div class="container">
+        <p class="team__descr">For true enjoyers of the atmosphere</p>
+        <h3 class="team__title">Our barbers</h3>
+        <ul class="team-list">
+          <li class="team-list__item">
+            <picture class="team-list__picture">
+              <source srcset="./img/barbers/john418.jpg 1x, ./img/barbers/john836.jpg 2x ">
+              <img class="team-list__img" src="./img/barbers/alan418.jpg" alt="foto master">
+            </picture>
+            <p class="team-list__name">John Smith</p>
+            <p class="team-list__prof">Extreme Barber</p>
+            <div class="container-social">
+              <ul class="list-social">
+                <li class="list-social__item">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-social__item">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-Vectorbeard"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-social__item">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-social__item--position">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-list__item">
+            <picture class="team-list__picture">
+              <source srcset="./img/barbers/michel418.jpg 1x, ./img/barbers/michel836.jpg 2x ">
+              <img class="team-list__img" src="./img/barbers/michel418.jpg" alt="foto master">
+            </picture>
+            <p class="team-list__name">Michele Doe</p>
+            <p class="team-list__prof">Extreme Barber</p>
+            <div class="container-social">
+              <ul class="list-social">
+                <li class="list-social__item">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-social__item">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-Vectorbeard"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-social__item">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-social__item--position">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-list__item">
+            <picture class="team-list__picture">
+              <source srcset="./img/barbers/alan418.jpg 1x, ./img/barbers/alan836.jpg 2x ">
+              <img class="team-list__img" src="./img/barbers/alan418.jpg" alt="foto master">
+            </picture>
+            <p class="team-list__name">Alan Black</p>
+            <p class="team-list__prof">Extreme Barber</p>
+            <div class="container-social">
+              <ul class="list-social">
+                <li class="list-social__item">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-social__item">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-Vectorbeard"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-social__item">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-social__item--position">
+                  <a class="list-social__link" href="">
+                    <svg class="list-social__svg" width="44" height="44">
+                      <use class="list-social__icon" href="./img/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </section>
     <!-- Портфоліо -->
     <section class="section">
-      <h2 class="portfolio__title">In Latin, "barba" means "beard"</h2>
-      <img class="portfolio__img" src="" alt="portfolio" width="270">
-      <img class="portfolio__img" src="" alt="portfolio" width="270">
-      <img class="portfolio__img" src="" alt="portfolio" width="270">
-      <img class="portfolio__img" src="" alt="portfolio" width="270">
+      <div class="container">
+        <h2 class="portfolio__title">In Latin, "barba" means "beard"</h2>
+        <picture class="portfolio-list__picture">
+          <source srcset="./img/portfolio/portfolio-1-418.jpg 1x, ./img/portfolio/portfolio-1-836.jpg 2x ">
+          <img class="portfolio-list__img" src="./img/portfolio/portfolio-1-418.jpg" alt="barbershop">
+        </picture>
+        <picture class="portfolio-list__picture">
+          <source srcset="./img/portfolio/portfolio-2-418.jpg 1x, ./img/portfolio/portfolio-2-836.jpg 2x ">
+          <img class="portfolio-list__img" src="./img/portfolio/portfolio-2-418.jpg" alt="barbershop">
+        </picture>
+        <picture class="portfolio-list__picture">
+          <source srcset="./img/portfolio/portfolio-3-418.jpg 1x, ./img/portfolio/portfolio-3-836.jpg 2x ">
+          <img class="portfolio-list__img" src="./img/portfolio/portfolio-3-418.jpg" alt="barbershop">
+        </picture>
+        <picture class="portfolio-list__picture portfolio-list__picture--position ">
+          <source srcset="./img/portfolio/portfolio-4-418.jpg 1x, ./img/portfolio/portfolio-4-836.jpg 2x ">
+          <img class="portfolio-list__img" src="./img/portfolio/portfolio-4-418.jpg" alt="barbershop">
+        </picture>
+      </div>
+
     </section>
   </main>
-  <footer>
-    <h3 class="footer__title">Online-booking</h3>
-    <form class="form-footer">
-      <label class="form-footer__label" for="username">Name*
-        <input class="form-footer__input" type="text" id="username">
-      </label>
-      <label class="form-footer__label" for="usertel">Phone*
-        <input class="form-footer__input" type="tel" id="usertel">
-      </label>
-      <label class="form-footer__label" for="comment"></label>
-      <textarea class="form-footer__textarea" name="comment" id="comment"></textarea>
-      <button class="form-footer__btn" type="submit">send</button>
-    </form>
-    <address class="address">
-      <p class="address__info">Contacts</p>
-      <p class="address__descr"><a class="address__link" href="">st. Vasilkovaya, 7A
-          Kiev, 08132</a></p>
-      <a class="address__tel" href="tel:+380441111111">+380441111111</a>
-      <a class="address__mail" href="mailto:barbershop@email.com">barbershop@email.com</a>
-    </address>
-    <p class="work-schedule">Working hours</p>
-    <p class="work-schedule__descr">Every day from 9:00 to 22:00</p>
-    <p class="protection-rights">Copyright 2020</p>
+  <section class="section section__form">
+    <div class="container">
+      <h3 class="form__title">Online-booking</h3>
+      <form class="form">
+        <label class="form__label" for="username">
+          <input class="form__input" type="text" placeholder="Name*" id="username">
+        </label>
+        <label class="form__label" for="usertel">
+          <input class="form__input" type="tel" placeholder="Phone*" id="usertel">
+        </label>
+        <label class="form__label" for="usertel">
+          <textarea class="form__textarea" name="comment" id="comment" placeholder="Message"></textarea>
+        </label>
+        <button class="btn btn__form" type="submit">send</button>
+      </form>
+    </div>
+  </section>
+  <section class="section section__address">
+    <div class="container container__address">
+      <address class="address">
+        <p class="address__info">Contacts</p>
+        <p class="address__descr"><svg class="address__svg" width="24" height="24">
+            <use class="address__icon" href="./img/icons.svg#icon-map-pin"></use>
+          </svg><a class="address__link"
+            href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+7,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.3958141,30.501413,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c8c951889799:0x58e0259a6e5b738d!8m2!3d50.3958107!4d30.5036017">st.
+            Vasilkovaya, 7A
+            Kiev, 08132</a></p>
+        <div class="address__container">
+          <svg class="address__svg" width="24" height="24">
+            <use class="address__icon" href="./img/icons.svg#addr-phone"></use>
+          </svg><a class="address__tel-mail" href="tel:+380441111111">+380441111111</a>
+        </div>
+        <div class="address__container address__container--position">
+          <svg class="address__svg" width="24" height="24">
+            <use class="address__icon" href="./img/icons.svg#addr-mail"></use>
+          </svg><a class="address__tel-mail" href="mailto:barbershop@email.com">barbershop@email.com</a>
+        </div>
+      </address>
+      <p class="work-schedule">Working hours</p>
+      <p class="work-schedule__descr">Every day from 9:00 to 22:00</p>
+    </div>
+  </section>
+  <footer class="footer">
     <ul class="footer-socials">
-      <li class="footer-socials__item"><a href="">Youtube</a></li>
-      <li class="footer-socials__item"><a href="">Instagram</a></li>
-      <li class="footer-socials__item"><a href="">facbook</a></li>
+      <li class="footer-socials__item"><a class="footer-socials__link" href="">Instagram</a></li>
+      <li class="footer-socials__item"><a class="footer-socials__link" href="">Youtube</a></li>
     </ul>
+    <p class="protection-rights"><span class="protection-rights__span">&#169</span>Copyright 2020</p>
   </footer>
+
 </body>
 
 </html>

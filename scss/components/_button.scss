@@ -20,33 +20,39 @@
 
             &:hover {
                 color: $primer-text-color;
-                background-color: $btn-hover-color;
+                background-color: $btn-border-color;
             }
         }
 
         &__benefits {
             margin-top: 20px;
             color: $primer-title-color;
+
             &:hover {
                 color: $primer-text-color;
-                background-color: $btn-hover-color;
+                background-color: $btn-border-color;
             }
         }
 
         &__servic {
             display: block;
             margin: 0 auto;
-            margin-top: 20px;
             color: $primer-text-color;
 
 
             
             &:hover {
                 color: $primer-text-color;
-                background-color: $btn-hover-color;
+                background-color: $btn-border-color;
             }
+        }
+
+        &__form {
+            color: $primer-text-color;
+            margin: 0 auto;
         }
 
 
         
     }
+
