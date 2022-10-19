@@ -78,6 +78,11 @@
         line-height: 1.43;
         letter-spacing: 0.02em;
         color: $servic-text-color;
+     
+        @media screen and (max-width: 420px) {
+            font-size: 10px;
+            line-height: 1.1;
+        }
     }
    
 }

@@ -23,6 +23,11 @@
           <use class="logo__icon" href="./img/icons.svg#icon-Logo"></use>
         </svg>
       </a>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40">
+          <use class="menu-toggle__icon--open" href="./img/icons.svg#btn-open"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="">About</a></li>
@@ -253,7 +258,7 @@
             </picture>
             <p class="team-list__name">Alan Black</p>
             <p class="team-list__prof">Extreme Barber</p>
-            <div class="container-social">
+            <div class="container-social container-social--position">
               <ul class="list-social">
                 <li class="list-social__item">
                   <a class="list-social__link" href="">
@@ -363,6 +368,32 @@
     </ul>
     <p class="protection-rights"><span class="protection-rights__span">&#169</span>Copyright 2020</p>
   </footer>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="40" height="40">
+        <use class="menu-toggle__icon--close" href="./img/icons.svg#btn-close"></use>
+      </svg>
+    </button>
+    <nav class="nav-mobil">
+      <ul class="nav-mobil__list">
+        <li class="nav-mobil__item"><a class="nav-mobil__link" href="">About</a></li>
+        <li class="nav-mobil__item"><a class="nav-mobil__link" href="">Services and prices</a></li>
+        <li class="nav-mobil__item"><a class="nav-mobil__link" href="">Barbers</a></li>
+        <li class="nav-mobil__item"><a class="nav-mobil__link" href="">Contacts</a></li>
+      </ul>
+    </nav>
+    <a class="nav-mobil__cont" href="tel:+380441111111">+380441111111</a>
+    <button class="btn nav-mobil__btn" type="submit">Online-booking</button>
+    <ul class="nav-mobil__socials">
+      <li class="nav-mobil__social"><a class="nav-mobil__link nav-mobil__link--flex" href="">Instagram</a></li>
+      <li class="nav-mobil__social"><a class="nav-mobil__link nav-mobil__link--position" href="">Youtube</a></li>
+    </ul>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 

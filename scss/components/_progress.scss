@@ -49,6 +49,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    &__container {
+        width: 100%;
+    }
     
     
     &__item {
@@ -59,9 +63,15 @@
 
         &--indent {
             margin-top: 35px;
+            @media screen and (max-width: 479px) {
+                margin: 0;
+            }
         }
         &--shift {
             margin-top: -30px;
+            @media screen and (max-width: 479px) {
+                margin: 0;
+            }
         }
     }
 

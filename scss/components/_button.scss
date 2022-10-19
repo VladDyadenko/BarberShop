@@ -36,11 +36,9 @@
 
         &__servic {
             display: block;
-            margin: 0 auto;
+            margin: 40px auto 0 auto;
             color: $primer-text-color;
-
-
-            
+                        
             &:hover {
                 color: $primer-text-color;
                 background-color: $btn-border-color;
