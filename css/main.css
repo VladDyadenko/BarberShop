@@ -170,7 +170,7 @@ body {
   font-family: Raleway, cursive;
   color: #FFFFFF;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .title {
     font-size: 26px;
     line-height: 1.1;
@@ -344,7 +344,7 @@ body {
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .servic__title {
     font-size: 26px;
     line-height: 1.1;
@@ -442,7 +442,7 @@ body {
   letter-spacing: 0.048em;
   color: #303030;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .progress__title {
     font-size: 26px;
     line-height: 1.1;
@@ -552,7 +552,7 @@ body {
   letter-spacing: 0.05em;
   color: #303030;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .team__title {
     font-size: 26px;
     line-height: 1.1;
@@ -722,7 +722,7 @@ body {
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .form__title {
     font-size: 26px;
     line-height: 1.1;
@@ -873,7 +873,7 @@ body {
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .address__info {
     font-size: 26px;
     line-height: 1.1;
@@ -1054,7 +1054,7 @@ body {
 .menu-container .menu-toggle {
   position: absolute;
   top: 48px;
-  right: 174px;
+  right: 35%;
   background-color: #FFFFFF;
 }
 .menu-toggle__icon--close {
@@ -1140,10 +1140,27 @@ body {
   background-color: currentColor;
   margin-right: 40px;
 }
+@media screen and (max-width: 400px) {
+  .nav-mobil__link--flex::before {
+    display: none;
+  }
+}
 .nav-mobil__link--position {
   display: block;
-  margin: 24px 0 0 100px;
 }
 .nav-mobil__link:hover, .nav-mobil__link:active {
   color: #FF6C00;
+}
+.nav-mobil__social--position {
+  margin: 24px 0 0 100px;
+}
+@media screen and (max-width: 400px) {
+  .nav-mobil__social--position {
+    margin: 24px 0 0 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav-mobil__btn {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

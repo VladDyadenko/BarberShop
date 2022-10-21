@@ -34,7 +34,7 @@
     .menu-container & {
         position: absolute;
         top: 48px;
-        right: 174px;
+        right: 35%;
         background-color: $primer-text-color;
     }
 
@@ -130,10 +130,14 @@
             background-color: currentColor;
             margin-right: 40px;
 
+            @include max-mobil {
+               display: none;
+            }
         }
+
         &--position {
             display: block;
-            margin: 24px 0 0 100px;
+            
         }
        
 
@@ -142,6 +146,19 @@
             color: $btn-border-color;
         }
     }
+    &__social--position {
+        margin: 24px 0 0 100px;
+        @include max-mobil {
+            margin: 24px 0 0 0;
+        }
+    }
+    &__btn {
+        @include max-mobil {
+            font-size: 10px;
+        }
+    }
+
+
 
 }
 
