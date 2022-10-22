@@ -1,6 +1,13 @@
-.benefits__img {
-    @media (max-width: 767px) {
+.benefits__picture {
+    width: 330px;
+    height: 235px;
+    display: block;
+    @include max-table {
         display: none;
+    }
+
+    &--position {
+        margin-bottom: 30px;
     }
 }
 .benefits__descr {
@@ -34,11 +41,22 @@
 
 }
 .benefits__action {
-    margin: 0 0 20px 0;
+    margin: 0;
     width: 100%;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.63;
+    font-size: 14px;
+    line-height: 1.86;
     letter-spacing: 0.02em;
     color: $third-text-color;
+
+    &--font {
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        line-height: 1.86;
+    }
+
+}
+
+.containe-img {
+    margin-right: 30px;
 }

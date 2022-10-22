@@ -26,9 +26,14 @@
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: $primer-text-color;
+
     @include max-mobil {
         font-size: 26px;
         line-height: 1.1;
+    }
+    @include min-table {
+        font-size: 42px;
+        line-height: 1.17;
     }
 
 }
@@ -83,6 +88,12 @@
             font-size: 10px;
             line-height: 1.1;
         }
+
+        @include min-table {
+            font-size: 18px;
+            line-height: 1.67;
+        }
+
     }
    
 }

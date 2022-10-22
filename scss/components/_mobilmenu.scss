@@ -18,6 +18,10 @@
         width: 100vw;
         transform: translateX(30%);
     }
+
+    @include min-table {
+        display: none;
+    }
 }
 
 .menu-toggle {
@@ -30,6 +34,12 @@
     background-color: transparent;
     outline: none;
     border: none;
+
+    @include min-table {
+        display: none;
+    }
+
+
 
     .menu-container & {
         position: absolute;

@@ -14,8 +14,11 @@
 
         &__header {
             color: $primer-text-color;
-            @media (max-width: 767px) {
+            @include max-table {
                display: none;
+            }
+            @include table {
+                margin-left: auto;
             }
 
             &:hover {
@@ -31,6 +34,10 @@
             &:hover {
                 color: $primer-text-color;
                 background-color: $btn-border-color;
+            }
+
+            @include min-table {
+                margin-top: 77px;
             }
         }
 

@@ -21,3 +21,31 @@ $font-Releway: Raleway, cursive;
     }
 }
 
+
+@mixin min-mobil {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin mobil {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin max-table {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin min-table {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin table {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        @content;
+    }
+}
+

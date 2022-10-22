@@ -23,8 +23,25 @@
     &--position {
         margin-bottom: 0;
     }
+    @include table {
+        width: 330px;
+        height: 360px;
+    }
 }
 .portfolio-list__img {
     display: block;
     width: 100%;
+    
+    @include table {
+        width: 330px;
+        height: 360px;
+    }
+    
+}
+
+.portfolio-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
 }

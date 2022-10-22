@@ -7,6 +7,9 @@
     line-height: 1.36;
     text-transform: uppercase;
     color: $primer-title-color;
+    @include min-table {
+
+    }
 
     &::before {
         content: "";
@@ -30,6 +33,10 @@
         line-height: 1.1;
     }
 
+    @include min-table {
+        width: 449px;
+    }
+
 }
 
 .progress__slogan {
@@ -39,6 +46,10 @@
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: $third-text-color;
+
+    @include min-table {
+       width: 500px;
+    }
 }
 
 .progress-list {
@@ -53,6 +64,12 @@
     &__container {
         width: 100%;
     }
+    @include table {
+        margin-left: 239px;
+        width: 450px;
+
+
+    }
     
     
     &__item {
@@ -60,6 +77,9 @@
         height: 133px;
         padding: 20px 36px;
         background: #F7F7F7;
+        @include mobil {
+            width: 193px;
+        }
 
         &--indent {
             margin-top: 35px;
@@ -72,6 +92,11 @@
             @media screen and (max-width: 479px) {
                 margin: 0;
             }
+        }
+
+        @include min-table {
+            width: 210px;
+
         }
     }
 
