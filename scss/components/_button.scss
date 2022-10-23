@@ -55,6 +55,9 @@
         &__form {
             color: $primer-text-color;
             margin: 0 auto;
+            @include table {
+                margin: 0;
+            }
         }
 
 

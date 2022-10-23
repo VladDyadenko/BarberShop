@@ -2,6 +2,14 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    @include table {
+        flex-wrap: wrap;
+        flex-direction: row;
+        :nth-child(1) {
+            margin-right: 30px;
+        }
+    }
+
 
 
     &__title {
@@ -16,6 +24,9 @@
         @include max-mobil {
             font-size: 26px;
             line-height: 1.1;
+        }
+        @include table {
+            text-align: start;
         }
     }
 
@@ -38,7 +49,12 @@
             @include transition (all);
                          
         }
-        
+        &--position {
+            @include table {
+                width: 330px;
+            }
+        }
+               
     }
     &__label:hover:before,
     &__label:active:before {
@@ -61,6 +77,10 @@
         text-transform: uppercase;
         color: $primer-text-color;
         @include transition (all);
+        @include table {
+            width: 330px;
+        }
+        
 
            
     }

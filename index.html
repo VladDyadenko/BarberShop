@@ -74,11 +74,11 @@
       <div class="containe-img">
         <picture class="benefits__picture benefits__picture--position">
           <source srcset="./img/bestbarber/bestbarber1.jpg 1x, ./img/bestbarber/bestbarber1@2x.jpg 2x ">
-          <img class="team-list__img" src="./img/bestbarber/bestbarber1.jpg" alt="foto master">
+          <img class="benefits__img" src="./img/bestbarber/bestbarber1.jpg" alt="foto master">
         </picture>
         <picture class="benefits__picture">
           <source srcset="./img/bestbarber/bestbarber2.jpg 1x, ./img/bestbarber/bestbarber2@2x.jpg 2x ">
-          <img class="team-list__img" src="./img/bestbarber/bestbarber2.jpg" alt="foto master">
+          <img class="benefits__img" src="./img/bestbarber/bestbarber2.jpg" alt="foto master">
         </picture>
       </div>
       <div>
@@ -182,13 +182,15 @@
   </section>
   <!-- Команда -->
   <section class="section section__team">
-    <div class="container">
+    <div class="container container__team">
       <p class="team__descr">For true enjoyers of the atmosphere</p>
       <h3 class="team__title">Our barbers</h3>
       <ul class="team-list">
         <li class="team-list__item">
           <picture class="team-list__picture">
-            <source srcset="./img/barbers/john418.jpg 1x, ./img/barbers/john836.jpg 2x ">
+            <source srcset="./img/barbers/john418.jpg 1x, ./img/barbers/john836.jpg 2x " media="(max-width: 767px)">
+            <source srcset="./img/barbers/barber-1-table.jpg 1x, ./img/barbers/barber-1-table@2x.jpg 2x "
+              media="(max-width: 1199px)">
             <img class="team-list__img" src="./img/barbers/alan418.jpg" alt="foto master">
           </picture>
           <p class="team-list__name">John Smith</p>
@@ -228,7 +230,9 @@
         </li>
         <li class="team-list__item">
           <picture class="team-list__picture">
-            <source srcset="./img/barbers/michel418.jpg 1x, ./img/barbers/michel836.jpg 2x ">
+            <source srcset="./img/barbers/michel418.jpg 1x, ./img/barbers/michel836.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./img/barbers/barber-2-table.jpg 1x, ./img/barbers/barber-2-table@2x.jpg 2x"
+              media="(max-width: 1199px)">
             <img class="team-list__img" src="./img/barbers/michel418.jpg" alt="foto master">
           </picture>
           <p class="team-list__name">Michele Doe</p>
@@ -268,7 +272,9 @@
         </li>
         <li class="team-list__item">
           <picture class="team-list__picture">
-            <source srcset="./img/barbers/alan418.jpg 1x, ./img/barbers/alan836.jpg 2x ">
+            <source srcset="./img/barbers/alan418.jpg 1x, ./img/barbers/alan836.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./img/barbers/barber-3-table.jpg 1x, ./img/barbers/barber-3-table@2x.jpg 2x"
+              media="(max-width: 1199px)">
             <img class="team-list__img" src="./img/barbers/alan418.jpg" alt="foto master">
           </picture>
           <p class="team-list__name">Alan Black</p>
@@ -316,19 +322,31 @@
       <h2 class="portfolio__title">In Latin, "barba" means "beard"</h2>
       <div class="portfolio-img">
         <picture class="portfolio-list__picture">
-          <source srcset="./img/portfolio/portfolio-1-418.jpg 1x, ./img/portfolio/portfolio-1-836.jpg 2x ">
+          <source srcset="./img/portfolio/portfolio-1-418.jpg 1x, ./img/portfolio/portfolio-1-836.jpg 2x"
+            media="(max-width: 767px)">
+          <source srcset="./img/portfolio/portfolio-1-table.jpg 1x, ./img/portfolio/portfolio-1-table@2x.jpg 2x"
+            media="(max-width: 1199px)">
           <img class="portfolio-list__img" src="./img/portfolio/portfolio-1-418.jpg" alt="barbershop">
         </picture>
         <picture class="portfolio-list__picture">
-          <source srcset="./img/portfolio/portfolio-2-418.jpg 1x, ./img/portfolio/portfolio-2-836.jpg 2x ">
+          <source srcset="./img/portfolio/portfolio-2-418.jpg 1x, ./img/portfolio/portfolio-2-836.jpg 2x"
+            media="(max-width: 767px)">
+          <source srcset="./img/portfolio/portfolio-2-table.jpg 1x, ./img/portfolio/portfolio-2-table@2x.jpg 2x"
+            media="(max-width: 1199px)">
           <img class="portfolio-list__img" src="./img/portfolio/portfolio-2-418.jpg" alt="barbershop">
         </picture>
         <picture class="portfolio-list__picture">
-          <source srcset="./img/portfolio/portfolio-3-418.jpg 1x, ./img/portfolio/portfolio-3-836.jpg 2x ">
+          <source srcset="./img/portfolio/portfolio-3-418.jpg 1x, ./img/portfolio/portfolio-3-836.jpg 2x"
+            media="(max-width: 767px)">
+          <source srcset="./img/portfolio/portfolio-3-table.jpg 1x, ./img/portfolio/portfolio-3-table@2x.jpg 2x"
+            media="(max-width: 1199px)">
           <img class="portfolio-list__img" src="./img/portfolio/portfolio-3-418.jpg" alt="barbershop">
         </picture>
         <picture class="portfolio-list__picture portfolio-list__picture--position ">
-          <source srcset="./img/portfolio/portfolio-4-418.jpg 1x, ./img/portfolio/portfolio-4-836.jpg 2x ">
+          <source srcset="./img/portfolio/portfolio-4-418.jpg 1x, ./img/portfolio/portfolio-4-836.jpg 2x"
+            media="(max-width: 767px)">
+          <source srcset="./img/portfolio/portfolio-4-table.jpg 1x, ./img/portfolio/portfolio-4-table@2x.jpg 2x"
+            media="(max-width: 1199px)">
           <img class="portfolio-list__img" src="./img/portfolio/portfolio-4-418.jpg" alt="barbershop">
         </picture>
       </div>
@@ -338,13 +356,13 @@
   </section>
 
   <section class="section section__form">
-    <div class="container">
+    <div class="container container__form">
       <h3 class="form__title">Online-booking</h3>
       <form class="form">
-        <label class="form__label" for="username">
+        <label class="form__label form__label--position" for="username">
           <input class="form__input" type="text" placeholder="Name*" id="username">
         </label>
-        <label class="form__label" for="usertel">
+        <label class="form__label form__label--position" for="usertel">
           <input class="form__input" type="tel" placeholder="Phone*" id="usertel">
         </label>
         <label class="form__label" for="comment">
@@ -375,8 +393,10 @@
           </svg><a class="address__tel-mail" href="mailto:barbershop@email.com">barbershop@email.com</a>
         </div>
       </address>
-      <p class="work-schedule">Working hours</p>
-      <p class="work-schedule__descr">Every day from 9:00 to 22:00</p>
+      <div class="container__work">
+        <p class="work-schedule">Working hours</p>
+        <p class="work-schedule__descr">Every day from 9:00 to 22:00</p>
+      </div>
     </div>
   </section>
   <footer class="footer">

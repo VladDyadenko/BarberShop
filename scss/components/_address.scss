@@ -14,6 +14,9 @@
             font-size: 26px;
             line-height: 1.1;
         }
+        @include table {
+            text-align: start;
+        }
      
     }
 
@@ -22,6 +25,10 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        @include table {
+            width: 330px;
+            padding-right: 72px;
+        }
     }
     
     &__svg {

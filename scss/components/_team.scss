@@ -59,10 +59,23 @@
     &__picture {
         display: block;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include table {
+            width: 450px;
+            height: 346px;
+            text-align: center;
+        }
     }
     &__img {
         display: block;
         width: 100%;
-    }
+        
+        @include table {
+            width: 450px;
+            height: 346px;
+        }
+}
 
 }
