@@ -33,6 +33,11 @@
     list-style: none;
     padding-left: 0;
     margin: 0;
+    @include desctop {
+        display: flex;
+        justify-content: center;
+
+    }
 
     &__name {
         margin: 30px 0 8px 0;
@@ -67,6 +72,10 @@
             height: 346px;
             text-align: center;
         }
+        @include desctop {
+            width: 370px;
+            height: 346px;
+        }
     }
     &__img {
         display: block;
@@ -76,6 +85,17 @@
             width: 450px;
             height: 346px;
         }
-}
+        @include desctop {
+            width: 370px;
+            height: 346px;
+        }
+    }
+
+    .team-list__item {
+        margin-right: 30px;
+        &--position {
+            margin: 0;
+        }
+    }
 
 }

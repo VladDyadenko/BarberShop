@@ -10,6 +10,11 @@ body {
 .section {
     padding-top: 84px;
     padding-bottom: 84px;
+    @include desctop {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+    }
 
     &__general {
         max-width: 480px;
@@ -39,6 +44,7 @@ body {
             padding-bottom: 40px;
             max-width: 570px;
             height: 680px;
+            margin: 0;
             background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bgimg/generaltable.jpg);
             @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
@@ -49,6 +55,14 @@ body {
                     url(../img/bgimg/generaltable@2x.jpg);
         
             }
+        }
+
+        @include desctop {
+            max-width: 1070px;
+            height: 680px;
+            padding: 40px 0;
+            margin: 0;
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bgimg/generaltable.jpg);
         }
 
     }
@@ -92,6 +106,12 @@ body {
         
         }
 
+        @include desctop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            height: 692px;
+        }
+
     }
 
     &__team {
@@ -99,6 +119,12 @@ body {
         max-width: 1600px;
         margin-left: auto;
         margin-right: auto;
+        @include table {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: 1962px;
+        }
+
        
     }
 
@@ -112,6 +138,17 @@ body {
             padding-top: 100px;
             padding-bottom: 100px;
             height: 521px;
+        }
+        @include table {
+            height: 634px;
+            padding-top: 130px;
+            padding-left: 216px;
+        }
+        @include desctop {
+            padding-top: 120px;
+            padding-bottom: 183px;
+            height: 634px;
+            
         }
     }
 
@@ -135,7 +172,7 @@ body {
         
         }
         @include table {
-            padding-top: 100px;
+            adding-top: 100px;
             padding-bottom: 100px;
             background-image: url(../img/bgimg/addresstable.png), linear-gradient(#191C26, #191C26);
             @media (min-device-pixel-ratio: 2),
@@ -148,6 +185,11 @@ body {
         
             }
         }
+        @include desctop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            height: 634px;
+        }
     }
 
    
@@ -157,11 +199,21 @@ body {
             padding-bottom: 100px;
         }
         
+        @include desctop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        
     }
 
     &__progress {
         padding-top: 100px;
         padding-bottom: 100px;
+        @include desctop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
     }
 }
 
@@ -181,20 +233,56 @@ body {
         width: 768px;
     }
 
+    @include desctop {
+        width: 1170px;
+        padding: 0;
+    }
+
     &__general {
         @include table {
             max-width: 570px;
             padding-left: 20px;
             padding-right: 20px;
 
-            &-hero {
+            &--hero {
                 width: 360px;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 156px;
+                margin: 156px auto 0 auto;
+
+                
             }
         }
         
+        @include desctop {
+            max-width: 1070px;
+            padding-left: 100px;
+            padding-right: 20px;
+            &--hero {
+                margin-top: 184px;
+                width: 444px;
+            }
+
+        }
+
+        &--desctop {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            @include desctop {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &--flex {
+            max-width: 530px;
+           display: flex;
+           align-items: baseline;
+           justify-content:space-between; 
+            @include desctop {
+                max-width: 950px;
+            }
+        }
+          
     }
 
     &__header {
@@ -203,7 +291,7 @@ body {
         align-items: center;
         justify-content: space-between;
 
-        @include table {
+        @include min-table {
             width: 90px;
             height: 680px;
             flex-direction: column;
@@ -225,12 +313,15 @@ body {
         @include table {
           padding: 0 39px;
         }
+        @include desctop {
+            width: 1170px;
+            padding: 0;
+        }
     }
 
     &--benefits {
-        @include table {
+        @include min-table {
             display: flex;
-            max-width: 768px;
             padding: 0 39px;
         }
     }
@@ -239,6 +330,12 @@ body {
         padding: 0 31px;
         @include table {
             padding: 0 39px;
+        }
+        @include desctop {
+            display: flex;
+            width: 1170px;
+            padding-left: 100px;
+            padding-right: 70px;
         }
     }
 
@@ -253,14 +350,25 @@ body {
         @include table {
             padding: 0 39px;
         }
+        @include desctop {
+            padding-right: 30px;
+            max-width: 800px;
+            
+        }
+
         
     }
 
     &__address {
         @include table {
             display: flex;
+            
+        }
+        @include desctop {
+            max-width: 800px;
         }
     }
+
     &__work {
         @include table {
             margin-left: 30px;
@@ -268,7 +376,33 @@ body {
         }
     }
 
+    &__img {
+        margin-right: 30px;
 
+        @include desctop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        
+        
+    }
+
+    &__benefits-descr {
+        @include desctop {
+            width: 470px;
+        }
+    }
+    &__address {
+        @include desctop {
+            padding-left: 100px;
+          
+            
+        }
+    }
+    
 
     
 
@@ -294,6 +428,9 @@ body {
         justify-content: center;
         :not(:last-child) {
             margin-right: 16px;
+            @include desctop {
+                margin-right: 30px;
+            }
         }
     }
     &__link {
@@ -303,13 +440,15 @@ body {
         letter-spacing: 0.08em;
         color: $primer-text-color;
         text-decoration: none;
-        padding-left: 0;
-
+        padding: 16px 0;      
         @include transition (all);
+
         &:hover,
         &:active {
             color: $btn-border-color;
         }
+
+
 
            
         
@@ -328,6 +467,11 @@ body {
     @include max-mobil {
         font-size: 26px;
         line-height: 1.1;
+    }
+
+    @include desctop {
+        font-size: 72px;
+        line-height: 1.18;
     }
 
     &__descr {
@@ -359,7 +503,12 @@ body {
         font-size: 16px;
         line-height: 1.63;
         letter-spacing: 0.02em;
-        color: #9DA4BD;
+        color: $servic-text-color;
+        @include desctop {
+            width: 358px;
+            font-size: 18px;
+            line-height: 1.67;
+        }
     }
 
     &__list {
@@ -381,6 +530,9 @@ body {
     justify-content: flex-end;
     :not(:last-child) {
         margin-right: 54px;
+    }
+    @include desctop {
+        margin: 144px 0 0 0;
     }
 
     &__item {

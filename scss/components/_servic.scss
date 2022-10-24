@@ -40,13 +40,28 @@
 
 .servic-list {
     width: 100%;
-    padding: 30px 20px 30px 40px;
+    padding: 26px 20px 34px 40px;
     margin: 0 auto;
+    @media screen and (max-width: 1199px) {
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
     
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-
+    @include desctop {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        :not(:last-child) {
+            margin-right: 30px;
+        }
+    }
     &__item {
         list-style: none;
+        
+        @include desctop {
+            padding: 30px 20px;
+            width: 570px;
+            background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+        }
         
     }
     &__list-price {

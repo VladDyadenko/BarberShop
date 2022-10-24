@@ -14,10 +14,10 @@
             font-size: 26px;
             line-height: 1.1;
         }
-        @include table {
+        @include min-table {
             text-align: start;
         }
-     
+             
     }
 
     &__descr {
@@ -28,6 +28,9 @@
         @include table {
             width: 330px;
             padding-right: 72px;
+        }
+        @include desctop {
+            width: 230px;
         }
     }
     
@@ -52,6 +55,9 @@
         margin-bottom: 20px;
         &--position {
             margin: 0 0 44px 0;
+            @include desctop {
+                margin: 0 0 70px 0;
+            }
         }
     }
 
@@ -97,4 +103,16 @@
 
     }
 
+}
+
+.container-lower {
+    @include desctop {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }

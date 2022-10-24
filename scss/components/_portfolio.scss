@@ -15,6 +15,9 @@
         background-color: currentColor;
         margin-right: 20px;
     }
+    @include desctop {
+        margin: 0 0 44px 0;
+    }
 }
 .portfolio-list__picture {
     display: block;
@@ -27,6 +30,10 @@
         width: 330px;
         height: 360px;
     }
+    @include desctop {
+        width: 270px;
+        height: 360px;
+    }
 }
 .portfolio-list__img {
     display: block;
@@ -34,6 +41,10 @@
     
     @include table {
         width: 330px;
+        height: 360px;
+    }
+    @include desctop {
+        width: 270px;
         height: 360px;
     }
     

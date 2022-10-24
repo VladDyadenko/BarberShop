@@ -25,6 +25,10 @@
                 color: $primer-text-color;
                 background-color: $btn-border-color;
             }
+            @include desctop {
+                order: 1;
+                margin-left: 40px;
+            }
         }
 
         &__benefits {
@@ -38,6 +42,9 @@
 
             @include min-table {
                 margin-top: 77px;
+            }
+            @include desctop {
+                margin-top: 42px;
             }
         }
 
@@ -56,6 +63,10 @@
             color: $primer-text-color;
             margin: 0 auto;
             @include table {
+                margin: 0;
+            }
+            @include desctop {
+                align-items: flex-start;
                 margin: 0;
             }
         }
