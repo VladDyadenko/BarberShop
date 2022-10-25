@@ -147,10 +147,10 @@ body {
         text-decoration: none;
         position: relative;
         padding: 8px 0;
-        @include transition (all);
+        @include transition (color);
 
-        &:hover,
-        &:active {
+        &:hover ,
+        &:active  {
             color: $primer-text-color;
         }
 
@@ -163,7 +163,7 @@ body {
             width: 100%;
             height: 2px;
             background-color: currentColor;
-            @include transition (all);
+            @include transition (color);
 
             .scrol-list__link:hover &,
             .scrol-list__link:active & {

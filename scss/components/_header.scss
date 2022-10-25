@@ -61,6 +61,7 @@
         list-style: none;
         writing-mode: vertical-lr;
         transform: rotate(-180deg);
+        
      
     }
     &__social-item--before {
@@ -82,6 +83,12 @@
         line-height: 1.36;
         letter-spacing: 0.2em;
         color: $primer-title-color;
+        @include transition (color);
+        
+
+        &:hover {
+            color: $btn-border-color;
+        }
     }
 
 
