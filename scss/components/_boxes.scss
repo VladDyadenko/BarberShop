@@ -276,7 +276,7 @@
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1170px;
     padding-left: 31px;
     padding-right: 31px;
     margin-left: auto;
@@ -384,6 +384,7 @@
     &--benefits {
         @include min-table {
             display: flex;
+            width: 100%;
             padding: 0 39px;
         }
     }
@@ -408,6 +409,13 @@
             padding: 0 159px;
         }
 
+    }
+
+    &__portfolio {
+        @include table {
+            padding-left: 39px;
+            padding-right: 39px;
+        }
     }
 
     &__form {
@@ -446,11 +454,15 @@
 
     &__img {
         margin-right: 30px;
+        @include table {
+            max-width: 369px;
+        }
 
         @include desctop {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex: 1 1 50%;
+            // align-items: center;
+            // justify-content: center;
 
         }
 
@@ -459,7 +471,11 @@
     }
 
     &__benefits-descr {
+        @include table {
+            max-width: 369px;
+        }
         @include desctop {
+            flex: 1 1 50%;
             width: 470px;
         }
     }

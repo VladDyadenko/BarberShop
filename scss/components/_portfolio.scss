@@ -23,23 +23,36 @@
 .portfolio-list__picture {
     display: block;
     width: 100%;
-    // margin-bottom: 30px;
+        
     &--position {
         margin-bottom: 0;
     }
     @include table {
-        width: 330px;
-        height: 360px;
+        // width: 330px;
+        // height: 360px;
+        width: 100%;
+        height: 100%;
+        max-width: 330px;
+        max-height: 360px;
+        padding: 0;
+        margin: 0;
+
     }
     @include desctop {
-        width: 270px;
-        height: 360px;
+        // width: 270px;
+        // height: 360px;
+        width: 100%;
+        height: 100%;
+        max-width: 270px;
+        max-height: 360px;
+        padding: 0;
+        margin: 0;
     }
 }
 .portfolio-list__img {
     display: block;
     width: 100%;
-    
+       
     @include table {
         width: 330px;
         height: 360px;
@@ -52,6 +65,12 @@
 }
 
 .portfolio-img {
+    @include max-table {
+        :not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    
     @include min-table {
         display: flex;
         flex-wrap: wrap;
